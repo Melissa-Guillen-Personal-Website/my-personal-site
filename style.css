@@ -1,15 +1,64 @@
+/* ALL PAGES */
+body{
+    background-color: #F6E6CB;
+    margin: 0;
+    padding: 0;
+}
 header {
-    background-color: #7D9D9C;
+    background-color: #E3CDC1;
+    padding: 10px 5px 10px 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    font-size: 20px;
 }
-
-body {
-    background-color: #E4DCCF;
+header::after {
+    display: block;
+    clear: both;
+    content: '';
+    width: 20px;
+    height: 20px;
 }
-
-img {
-   width: 45px;
+.name {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-footer {
-    background-color: #7D9D9C;
+.links{
+    float: right;
+}
+*/
+/* HOME PAGE */
+.imagecenter{
+    width: 20vh;
+}
+main{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding-top: 20vh;
+    text-align: center;
+}
+h3{
+    font-style: italic;
+}
+/* PORTFOLIO PAGE */
+.portfoliomain{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding-top: 15vh;
+}
+.imageleft{
+    float: left;
+    width: 40vh;
+}
+.imageright{
+    float: right;
+    width: 40vh;
+}
+/* ABOUT PAGE */
+.aboutmain{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding-top: 15vh;
 }
