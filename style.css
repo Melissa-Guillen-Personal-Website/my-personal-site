@@ -1,11 +1,10 @@
 /* ALL PAGES */
 body{
-    background-color: #F6E6CB;
+    background-color: #303242;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #E3CDC1;
     padding: 10px 5px 10px 5px;
     position: fixed;
     left: 0;
@@ -20,19 +19,17 @@ header::after {
     width: 20px;
     height: 20px;
 }
-.name {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
+span {
+    color: #ba6c65;
 }
-.links{
-    float: right;
+img{
+    width: 40vh;
 }
-*/
+p{
+    color: #f2be8d;
+}
 /* HOME PAGE */
-.imagecenter{
-    width: 20vh;
-}
+
 main{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
@@ -41,6 +38,7 @@ main{
 }
 h3{
     font-style: italic;
+    color: #ba6c65;
 }
 /* PORTFOLIO PAGE */
 .portfoliomain{
@@ -48,17 +46,57 @@ h3{
     min-height: 100vh;
     padding-top: 15vh;
 }
-.imageleft{
-    float: left;
-    width: 40vh;
-}
-.imageright{
-    float: right;
-    width: 40vh;
-}
 /* ABOUT PAGE */
 .aboutmain{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     padding-top: 15vh;
+}
+
+/* Adding CSS flex */
+
+
+/* flex in about page*/
+
+.rows{
+    display: flexbox;
+    align-items: center;
+    gap: 2em;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+/* flex in portfolio page*/
+
+.columns{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 10px 20px;
+    margin: 20px;
+}
+div{
+    background-color: #394359;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #ba6c65;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #f2be8d;
+    transition: .3s;
 }
